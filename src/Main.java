@@ -8,11 +8,12 @@ public class Main {
         weapon.weaponType = "fireams";
         weapon.machine = "machineGun";
 
+        boss.setWeapon(weapon);
+
         System.out.println(boss.getHealth());
         System.out.println(boss.getDamage());
-        System.out.println(weapon.weaponType);
-        System.out.println(weapon.machine);
-
+        System.out.println(boss.getWeapon().machine);
+        System.out.println(boss.getWeapon().weaponType);
 
 
 
